@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rodrigo · Portfólio</title>
+<meta name="description" content="Portfólio de Rodrigo: sites, landing pages e lojas virtuais.">
+<meta name="theme-color" content="#f4f2ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rodrigo · Portfólio">
+<meta property="og:description" content="Sites, landing pages e lojas virtuais.">
+<link rel="icon" href="portfolio/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="portfolio/fontes/fraunces-opsz.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="portfolio/estilo.css">
+<script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js')</script>
+<script src="portfolio/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#projetos">Pular para os projetos</a>
+
+<header class="top">
+  <div class="wrap top__in">
+    <a class="brand" href="./" aria-label="Rodrigo, início do portfólio">Rodrigo</a>
+    <nav aria-label="Seções">
+      <ul class="nav">
+        <li><a href="#projetos">Projetos</a></li>
+        <!-- Depois: <li><a href="#sobre">Sobre</a></li> <li><a href="#contato">Contato</a></li> -->
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="titulo">
+    <div class="wrap">
+      <p class="label">Portfólio · <span data-ano>2026</span></p>
+      <h1 id="titulo">Rodrigo</h1>
+      <p class="hero__lede">Sites, landing pages e lojas virtuais, do layout ao código.</p>
+    </div>
+  </section>
+
+  <section class="works-sec" id="projetos" aria-labelledby="projetos-titulo">
+    <div class="wrap">
+      <div class="works-head">
+        <h2 id="projetos-titulo">Projetos</h2>
+        <div class="filters" role="group" aria-label="Filtrar projetos por categoria" data-filters hidden>
+          <button type="button" class="filter" data-filter="todos" aria-pressed="true">Todos <span data-count="todos"></span></button>
+          <button type="button" class="filter" data-filter="landing" aria-pressed="false">Landing pages <span data-count="landing"></span></button>
+          <button type="button" class="filter" data-filter="ecommerce" aria-pressed="false">E-commerce <span data-count="ecommerce"></span></button>
+          <button type="button" class="filter" data-filter="outros" aria-pressed="false">Outros <span data-count="outros"></span></button>
+        </div>
+      </div>
+      <p class="sr-only" aria-live="polite" data-live></p>
+
+      <!--
+        PARA ADICIONAR UM PROJETO: copie o bloco <li class="work"> ... </li> abaixo,
+        cole logo depois dele e troque:
+          - data-cat: landing, ecommerce ou outros
+          - o número (02, 03...), o link, a imagem, o título, o texto e os dados
+        Coloque a pasta do projeto na raiz do repositório, ao lado desta página.
+      -->
+      <ol class="works" data-works>
+        <li class="work" data-cat="landing">
+          <a class="work__link" href="landing-page-muscle-strong/">
+            <figure class="work__img">
+              <img src="portfolio/img/muscle-strong-landing-sm.webp"
+                   srcset="portfolio/img/muscle-strong-landing-sm.webp 800w, portfolio/img/muscle-strong-landing-lg.webp 1600w"
+                   sizes="(min-width: 900px) 58vw, 100vw" width="800" height="500"
+                   alt="Landing page da Muscle Strong no computador e no celular: título Sua marca, nossa fábrica e fotos de roupas personalizadas">
+            </figure>
+            <div class="work__body">
+              <p class="work__top"><span class="work__n">01</span><span class="tag">Landing page</span></p>
+              <h3>Muscle Strong<span>Orçamento pelo WhatsApp</span></h3>
+              <p class="work__desc">Página para anúncios do Google. O visitante escolhe os modelos, responde 5 perguntas e abre o WhatsApp com o pedido já escrito. No site real, cada pedido fica salvo num painel e chega por e-mail.</p>
+              <dl class="work__meta">
+                <div><dt>Ano</dt><dd>2026</dd></div>
+                <div><dt>Feito com</dt><dd>HTML, CSS, JavaScript, PHP e MySQL</dd></div>
+                <div><dt>Destaques</dt><dd>Formulário em etapas, LGPD, acessibilidade</dd></div>
+              </dl>
+              <span class="work__cta">Ver projeto <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </div>
+          </a>
+        </li>
+      </ol>
+      <p class="empty" data-empty hidden></p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p>© <span data-ano>2026</span> Rodrigo</p>
+    <p>Feito em HTML, CSS e JavaScript.</p>
+  </div>
+</footer>
+</body>
+</html>
